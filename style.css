@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0D1117;
+    color: aliceblue;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('hero-background.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+#header {
+    background-color: #161B22;
+    margin-bottom: 2rem; /* Added margin to create space below the header */
+}
+
+.navbar {
+    padding: 1rem 2rem;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-left div a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.nav-left div a:hover {
+    background-color: #238636;
+    border-radius: 5px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.search-input {
+    padding: 0.5rem;
+    border: 1px solid #30363D;
+    border-radius: 5px;
+    background-color: #161B22;
+    color: aliceblue;
+}
+
+.download-btn {
+    padding: 0.5rem 1rem;
+    background-color: #007ACC; /* Blue color for the download button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.download-btn:hover {
+    background-color: #006BB3;
+}
+
+.second-btn {
+    padding: 0.5rem 1rem;
+    background-color: transparent; /* Transparent background for the second button */
+    border: 2px solid #007ACC; /* Border with blue color */
+    border-radius: 5px;
+    color: #007ACC;
+    cursor: pointer;
+}
+
+.second-btn:hover {
+    background-color: #007ACC;
+    color: white;
+}
+
+#main-content {
+    padding: 3rem 2rem; /* Increased padding for more space */
+    text-align: center;
+    margin-bottom: 3rem; /* Added margin to separate it from the video section */
+}
+
+.main-item {
+    margin-bottom: 1rem;
+}
+
+#video-section {
+    text-align: center;
+    margin: 3rem 0; /* Increased margin to add space around the video section */
+    padding: 1rem 0; /* Added padding on top and bottom of the video section */
+}
+
+#video-section video {
+    width: 60%; /* Reduced video size */
+    height: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
