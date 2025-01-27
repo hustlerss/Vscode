@@ -16,6 +16,8 @@ body {
 #header {
     background-color: #161B22;
     margin-bottom: 2rem; /* Added margin to create space below the header */
+    width: 85vw;
+    margin: auto;
 }
 
 .navbar {
@@ -32,17 +34,15 @@ body {
     display: flex;
     gap: 1rem;
 }
+.logo{
+    display: flex;
+}
 
 .nav-left div a {
     color: aliceblue;
     text-decoration: none;
     font-size: 1rem;
     padding: 0.5rem;
-}
-
-.nav-left div a:hover {
-    background-color: #238636;
-    border-radius: 5px;
 }
 
 .nav-right {
@@ -59,10 +59,11 @@ body {
 }
 
 .download-btn {
-    padding: 0.5rem 1rem;
-    background-color: #007ACC; /* Blue color for the download button */
+    padding: 0.75rem 1.5rem; /* Increased padding for a larger button */
+    font-size: 1.2rem; /* Increased font size */
+    background-color: #007ACC;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px; /* Slightly larger border-radius for a smoother look */
     cursor: pointer;
     color: white;
 }
@@ -72,10 +73,11 @@ body {
 }
 
 .second-btn {
-    padding: 0.5rem 1rem;
-    background-color: transparent; /* Transparent background for the second button */
-    border: 2px solid #007ACC; /* Border with blue color */
-    border-radius: 5px;
+    padding: 0.75rem 1.5rem; /* Increased padding for consistency */
+    font-size: 1.2rem; /* Increased font size */
+    background-color: transparent;
+    border: 2px solid #007ACC;
+    border-radius: 8px;
     color: #007ACC;
     cursor: pointer;
 }
@@ -83,6 +85,15 @@ body {
 .second-btn:hover {
     background-color: #007ACC;
     color: white;
+}
+
+main section#main-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    margin: 0;
 }
 
 #main-content {
@@ -93,17 +104,27 @@ body {
 
 .main-item {
     margin-bottom: 1rem;
+    
 }
 
 #video-section {
+    background-image: url(/Vscode/assets/video/hero-background.webp);
+    width: 85vw;
+    height: 100vh;
     text-align: center;
-    margin: 3rem 0; /* Increased margin to add space around the video section */
-    padding: 1rem 0; /* Added padding on top and bottom of the video section */
-}
+    margin: 3rem auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    gap: 1.5rem;
+}    
 
 #video-section video {
-    width: 60%; /* Reduced video size */
-    height: auto;
+    width: 75vw; 
+    height: 90vh;
     border: 2px solid white;
     border-radius: 10px;
     display: block;
